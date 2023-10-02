@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 
     body{
         overflow: hidden;
@@ -54,6 +54,10 @@
 
     .botoes img{
         max-width: 52px;
+    }
+
+    .botoes {
+        padding: 3rem 1rem;
     }
 
     main::after{
