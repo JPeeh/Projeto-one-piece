@@ -77,7 +77,7 @@ main::after{
     align-items: center;
     gap: 1rem;
     min-height: 100vh;
-    min-width: 320px;
+    min-width: 200px;
 }
 
 .botoes button{
