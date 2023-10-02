@@ -1,0 +1,72 @@
+@media screen and (max-width: 767px){
+
+    body{
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .conteudo{
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 60vh;
+    }
+
+    .container_content{
+        max-width: 380px;
+        min-height: 70vh;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    main::after{
+        content: "";
+        background-image: linear-gradient(0deg, black -10%, rgba(0,0,0, 0) 65%);
+    }
+}
+
+@media screen and (max-width: 527px) {
+    .botoes img{
+        max-width: 70px;
+    }
+
+    .botoes{
+        gap: .7rem;
+    }
+
+    main::after{
+        content: "";
+        background-image: linear-gradient(0deg, black -10%, rgba(0,0,0, 0) 65%);
+    }
+    
+}
+
+@media screen and (max-width: 405px) {
+
+    .botoes img{
+        max-width: 52px;
+    }
+
+    main::after{
+        content: "";
+        background-image: linear-gradient(0deg, black -10%, rgba(0,0,0, 0) 65%);
+    }
+
+    .container_content .nome_personagem{
+        font-size: 2.3rem;
+    }
+
+    .container_content .descricao{
+        font-size: .8rem;
+    }
+    
+}

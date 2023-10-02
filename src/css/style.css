@@ -1,0 +1,100 @@
+body{
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.personagem:not(.selecionado){
+    display: none;
+}
+
+.personagem img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.conteudo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 26rem;
+    min-height: 100vh;   
+    z-index: 1;
+    padding: 1rem;
+}
+
+.conteudo .nome_personagem{
+    font-family: "Secular One";
+    color: white;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.conteudo .descricao{
+    font-family: "rubik"; 
+    color: white;  
+    line-height: 1.4rem;
+}
+
+.container_content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conteudo .container_content .logo{
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    width: 230px;
+    height: 100px;
+}
+
+main::after{
+    content: "";
+    background-image: linear-gradient(-233deg, black 30%, rgba(0,0,0, 0) 65%);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.botoes{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .3);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    width: 180px;
+}
+
+.botoes button{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.botoes button:focus{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px white;
+}
+
+.botoes img{
+    border-radius: 50%;
+}
+
+
